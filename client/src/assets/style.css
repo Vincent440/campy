@@ -1,0 +1,16 @@
+nav {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 2fr 2fr;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.active {
+  font-size: larger;
+}
