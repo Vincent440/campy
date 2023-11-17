@@ -8,7 +8,6 @@ export const LOGIN_USER = gql`
       token
       user {
         _id
-        username
       }
     }
   }
@@ -17,12 +16,11 @@ export const LOGIN_USER = gql`
 // http://localhost:3001/graphql?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4RxighigSwiQAJcwwBVAZwQCcAKAEhlrqV0XRIGUU6CSAOYBCADQkmCOLgIAbbnwHDxkgA65q1AO4Q6YRf0GiAlCWAAdOhdJkKNeg1b0OXSc-acEE6bIWTfeQkNLV19biYQnT0wM0trWxISFAgAa2QrGySkj3NMxOyAfQIwfOzsj1cEMuyAXxr6hMabEDEQADdcAVwAIzkEagwQeKySCxBKr3HucfbBKGrWmvHAuWmxjvmBgAsYOgBPAAEhGXkAOigIOHGxZZAosNKMDYeY8fza1pBqKAE1NEwIFqQA
 
 export const ADD_USER = gql`
-  mutation addUser($username: String!, $email: String!, $password: String!) {
-    addUser(username: $username, email: $email, password: $password) {
+  mutation addUser( $email: String!, $password: String!) {
+    addUser( email: $email, password: $password) {
       token
       user {
         _id
-        username
       }
     }
   }

@@ -3,16 +3,6 @@ const bcrypt = require('bcrypt');
 
 const userSchema = new Schema(
   {
-    // Usernames will be on a profile and will be public to other users
-    // TODO: Add regex validation for username - Must be letters or numbers and can't contain spaces.
-    username: {
-      type: String,
-      required: true,
-      unique: true,
-      trim: true,
-      maxLength: 32,
-      lowercase: true
-    },
     email: {
       type: String,
       required: true,
