@@ -1,6 +1,9 @@
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+// TailwindCSS directives
+import './assets/index.css'
+
 import App from './app.jsx'
 import Dashboard from './pages/dashboard'
 import Login from './pages/login.jsx'
