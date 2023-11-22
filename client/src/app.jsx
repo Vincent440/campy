@@ -1,4 +1,3 @@
-import './assets/style.css';
 import { Outlet } from 'react-router-dom';
 import {
   ApolloClient,
